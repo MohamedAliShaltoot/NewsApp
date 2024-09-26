@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:news_app/category_card.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -17,6 +18,7 @@ class HomeScreen extends StatelessWidget {
         ),
         backgroundColor: Colors.transparent, // to allow the background screen color appears 
       ),
+      body: const CategoryCard()
     );
   }
 }
