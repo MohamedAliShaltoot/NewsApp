@@ -7,7 +7,14 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("News  Cloud"),
+        centerTitle: true,
+        title: const Row(
+          mainAxisSize: MainAxisSize.min, // to minimize the size of row to contain only its children
+          children: [
+            Text("News",style: TextStyle(color: Colors.black,fontWeight: FontWeight.bold),),
+             Text("Cloud",style: TextStyle(color: Colors.orange,fontWeight: FontWeight.bold),),
+          ],
+        ),
         backgroundColor: Colors.transparent, // to allow the background screen color appears 
       ),
     );
