@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:news_app/categories_listview.dart';
+import 'package:news_app/news_list_views.dart';
+import 'package:news_app/news_tile.dart';
 
 
 class HomeScreen extends StatelessWidget {
@@ -19,8 +21,11 @@ class HomeScreen extends StatelessWidget {
         ),
         backgroundColor: Colors.transparent, // to allow the background screen color appears 
       ),
-      body: const CategroiesListView()
+      body: const NewsListViews()
+      //const CategroiesListView()
     );
   }
 }
+
+
 
